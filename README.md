@@ -12,10 +12,11 @@ It showed accuracy of 95.6%.
 
 ### confusion matrix
 
-|____________________|     　　 Predic class      |　　
-|____________________|  Positive   | Negative     |  
-| Actual| Positive   |      43     |      4       |
-| class | Negative   |      1      |     66       |
+|Actual class|--Predic class---|
+|------------|-----------------|
+|------------|Positive|Negative|  
+|--Positive--|---43---|----4---|
+|--Negative--|----1---|---66---|
 
 
 ### Algorithm
