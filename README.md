@@ -6,7 +6,7 @@ This is a code for AdaBoost via Weighted Least Squares.
 
 _Algorithm_
 
-'''math
+
 Initialize weights
 for n = 1, ..., N
 
