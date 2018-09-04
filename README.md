@@ -8,7 +8,7 @@ _Algorithm_
 
 '''math
 Initialize weights
-\\{ w^{\left( 1\right) }_{n}=\dfrac {1}{N}\\}^{N}_{n=1}
+$\\{ w^{\left( 1\right) }_{n}=\dfrac {1}{N}\\}^{N}_{n=1}
 
 for m = 1, ..., M
 
