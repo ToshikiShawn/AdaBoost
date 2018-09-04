@@ -9,21 +9,33 @@ _Algorithm_
 '''math
 Initialize weights
 for n = 1, ..., N
-<img src="https://latex.codecogs.com/gif.latex?\\{w^{\left(&space;1\right)&space;}_{n}=\dfrac&space;{1}{N}\\}^{N}_{n=1}"/>
+
+
+<img src="https://latex.codecogs.com/gif.latex?\begin{aligned}N\\&space;\left\{&space;w^{\left(&space;1\right)&space;}_{n}=\dfrac&space;{1}{N}\right\}&space;_{n=1}\end{aligned}"/>
 
 for m = 1, ..., M
 
-\arg \min _{\beta }\sum ^{N}_{n=1}w^{\left( m\right) }_{n}\left( y_{n}-\beta _{n}\cdot x_{n}\right) ^{2}
-h_{m}\left( x_{n}\right) =\begin{cases}1\left( h_{m}\left( x_{n}\right) >0.5\right)\\ O\left( h_{m}\left( x_{n}\right) \leq 0.5\right) \end{cases}
-I( h_{m}\left( x_{n}\right) \neq y_{n}\right)=\begin{cases}1ifh_{m}\left( x_{n}\right) \neq y_{n}\\ 0otherwise\end{cases}
+
+<img src="https://latex.codecogs.com/gif.latex?\arg&space;\min&space;_{\beta&space;}\sum&space;^{N}_{n=1}w^{\left(&space;m\right)&space;}_{n}\left(&space;y_{n}-\beta&space;_{n}\cdot&space;x_{n}\right)&space;^{2}"/>
+<img src="https://latex.codecogs.com/gif.latex?h_{m}\left(&space;x_{n}\right)&space;=\begin{cases}1\left(&space;h_{m}\left(&space;x_{n}\right)&space;>0.5\right)\\&space;0\left(&space;h_{m}\left(&space;x_{n}\right)&space;\leq&space;0.5\right)&space;\end{cases}"/>
+<img src="https://latex.codecogs.com/gif.latex?I(&space;h_{m}\left(&space;x_{n}\right)&space;\neq&space;y_{n})=\begin{cases}1\;&space;\;&space;\;&space;\;&space;if\;&space;\;&space;h_{m}\left(&space;x_{n}\right)&space;\neq&space;y_{n}\\&space;0\;&space;\;&space;\;&space;\;&space;otherwise\end{cases}"/>
+
 
 calculate error rate and reliablity
-\varepsilon _{m}=\dfrac {\sum ^{N}_{n=1}w^{m}_{n}I(h_{m}\left( x\right) \neq y_{n}\right)}{\sum ^{N}_{n=1}w^{m}_{n}}
-\alpha _{m}=\ln ( \dfrac {1-\varepsilon _{m}}{\varepsilon _{m}\right)}
+
+<img src="https://latex.codecogs.com/gif.latex?\varepsilon&space;_{n}=\dfrac&space;{\sum&space;^{N}_{n=1}w^{\left(&space;m\right)&space;}_{n}I\left(&space;h_{m}\left(&space;x\right)&space;\neq&space;y_n{}\right)&space;}{\sum&space;^{N}_{n=1}w^{\left(&space;m\right)&space;}_{n}}"/>
+<img src="https://latex.codecogs.com/gif.latex?\alpha&space;_{m}=\ln&space;(&space;\dfrac&space;{1-\varepsilon&space;_{m}}{\varepsilon&space;_{m}})"/>
+
+
+
 
 update weights
-w^{m+1}_{n}=w^{m}_{n}\exp \{ \alpha _{m}I\left( h_{m}\left( x_{n}\right)neq y_{n}\right)\right\}
+
+
+<img src="https://latex.codecogs.com/gif.latex?w^{(m&plus;1)}_{n}=w^{(m)}_{n}\exp&space;\{&space;\alpha&space;_{m}I\left(&space;h_{m}\left(&space;x_{n}\right)\neq&space;y_{n}\right)\right\}"/>
+
 
 make a predictor
-H\left( x\right) =sign\left( \sum ^{n}_{m=1}\alpha _{m}h_{m}\left( x_{n}\right))
-'''
+
+
+<img src="https://latex.codecogs.com/gif.latex?H\left(&space;x\right)&space;=sign\left(&space;\sum&space;^{n}_{m=1}\alpha&space;_{m}h_{m}\left(&space;x_{n}\right)\right)"/>
