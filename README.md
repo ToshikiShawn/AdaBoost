@@ -8,9 +8,9 @@ _Algorithm_
 
 '''math
 Initialize weights
-$$
-  \\{ w^{\left( 1\right) }_{n}=\dfrac {1}{N}\\}^{N}_{n=1}
-$$
+for n = 1, ..., N
+<img src="https://latex.codecogs.com/gif.latex?\\{w^{\left(&space;1\right)&space;}_{n}=\dfrac&space;{1}{N}\\}^{N}_{n=1}"/>
+
 for m = 1, ..., M
 
 \arg \min _{\beta }\sum ^{N}_{n=1}w^{\left( m\right) }_{n}\left( y_{n}-\beta _{n}\cdot x_{n}\right) ^{2}
