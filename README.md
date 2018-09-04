@@ -4,6 +4,13 @@
 
 This is a code for AdaBoost via Weighted Least Squares. 
 
+|            |       Predicted class      |
+|:----------:|:-----------:|:------------:|
+|            | Positive    | Negative     |
+| Positive   |      43     |    4         |
+| Negative   |        1    |    66        |
+
+
 _Algorithm_
 
 
