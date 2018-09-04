@@ -1,16 +1,16 @@
 # AdaBoost
 
-##*AdaBoost via Weighted Least Squares*
+##AdaBoost via Weighted Least Squares
 
 This is a code for AdaBoost via Weighted Least Squares. 
 
-###_experiment_  
+###experiment
 I used breast cancer datasets from sk-learn.
 choose 80% of data as training data and 20% of data as test data.
 confusion matrix of test data is as follows.
 It showed accuracy of 95.6%.
 
-###_confusion matrix_
+###confusion matrix
 
 |                    |     　　　Predic class      |　　
 |                    | Positive    | Negative     |  
@@ -18,7 +18,7 @@ It showed accuracy of 95.6%.
 | class | Negative   |      1      |    66        |
 
 
-###_Algorithm_
+###Algorithm
 
 
 Initialize weights
